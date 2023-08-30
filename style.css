@@ -394,6 +394,7 @@ body.dark-theme .form-field > input[type="submit"]{
   backdrop-filter:blur(35px);
   -webkit-backdrop-filter:blur(35px);
   width:100%;
+  min-height: 40px;
   padding:var(--s1) var(--s2);
   border-top:0.05rem solid;
   border-top-color:var(--light-hue);
@@ -413,7 +414,7 @@ body.dark-theme .form-field > input[type="submit"]{
   opacity:1;
 }
 .in-page-routelinks--bar button.in-page-routelink.route-to-meet{
-  font-size:0.8rem;
+  
 }
 .in-page-routelinks--bar button.in-page-routelink > span{
   color:var(--white);
