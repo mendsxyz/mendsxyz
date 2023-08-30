@@ -394,7 +394,7 @@ body.dark-theme .form-field > input[type="submit"]{
   backdrop-filter:blur(35px);
   -webkit-backdrop-filter:blur(35px);
   width:100%;
-  min-height: 40px;
+  min-height: 50px;
   padding:var(--s1) var(--s2);
   border-top:0.05rem solid;
   border-top-color:var(--light-hue);
