@@ -258,15 +258,16 @@ const app = {
         }
         */
         
+        
         window.addEventListener('scroll', function() {
           
           let scrollPosition = window.scrollY;
           
           //let documentHeight = document.documentElement.scrollHeight;
           
-         // let windowHeight = window.innerHeight;
+         let windowHeight = window.innerHeight;
           
-          if(scrollPosition >= 30){
+          if(scrollPosition >= 30 || windowHeight > 560){
             
             nav.in_page_routelinks_bar.forEach(bar => {
               
