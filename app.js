@@ -56,7 +56,7 @@ const app = {
             
         }
         
-        
+        /*
         const largerScreens = window.matchMedia("(min-height:560px)")
         
         function checkScreenSize(e){
@@ -78,7 +78,7 @@ const app = {
         largerScreens.addListener(checkScreenSize)
         
         checkScreenSize(largerScreens) 
-        
+        */
       },
       
       ROUTELINK_ACTIVE_STATE_AND_ROUTE_SWITCH(){
@@ -226,6 +226,24 @@ const app = {
         })
         
       },
+
+      SHOW_IN_PAGE_ROUTELINKS_BAR_ON_LONGER_MOBILE_SCREENS(){
+
+       window.addEventListener("load", function() {
+
+         let windowHeight = window.innerHeight;
+
+         if(windowHeight > 560){
+
+          nav.in_page_routelinks_bar.forEach(bar => {
+            bar.classList.add("scroll-end--slideup-bar")
+          }
+           
+         }
+         
+       }
+        
+      },
       
       SLIDEUP_IN_PAGE_ROUTELINKS_BAR_ON_SCROLL_END(){
         
@@ -246,7 +264,7 @@ const app = {
           
           //let documentHeight = document.documentElement.scrollHeight;
           
-          //let windowHeight = window.innerHeight;
+         // let windowHeight = window.innerHeight;
           
           if(scrollPosition >= 30){
             
@@ -255,6 +273,14 @@ const app = {
               bar.classList.add("scroll-end--slideup-bar")
               
             })
+            
+         /* } else if(windowHeight > 560){
+
+            nav.in_page_routelinks_bar.forEach(bar => {
+              
+              bar.classList.add("scroll-end--slideup-bar")
+              
+            }*/
             
           } else {
             
@@ -279,6 +305,8 @@ const app = {
     nav.ROUTELINK_ACTIVE_STATE_AND_ROUTE_SWITCH()
     
     nav.IN_PAGE_NAVIGATION()
+
+    nav.SHOW_IN_PAGE_ROUTELINKS_BAR_ON_LONGER_MOBILE_SCREENS()
     
     nav.SLIDEUP_IN_PAGE_ROUTELINKS_BAR_ON_SCROLL_END()
     
