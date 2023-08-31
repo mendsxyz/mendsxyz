@@ -236,6 +236,14 @@ const app = {
       SLIDEUP_IN_PAGE_ROUTELINKS_BAR_ON_SCROLL_END(){
         
         //let prevScrollPosition = window.scrollY;
+
+        let windowHeight = window.innerHeight;
+
+        if(windowHeight > 560){
+          nav.in_page_routelinks_bar.forEach(bar => {
+            bar.classList.add("scroll-end--slideup-bar)
+          }
+        }
           
         window.addEventListener('scroll', function() {
           
