@@ -332,6 +332,8 @@ const app = {
     const contact = {
       
       form: document.getElementById("contactForm"),
+
+      clientMessageInit: document.getElementById("clientMessageInit"),
       
       submitWrapper: document.getElementById("inputSubmitWrapper"),
       
@@ -342,6 +344,8 @@ const app = {
         contact.form.addEventListener("submit", function(e) {
           
           e.preventDefault()
+
+          contact.clientMessageInit.value = document.getElementById("clientMessageBox").innerText
           
           contact.submit.value = ""
           
