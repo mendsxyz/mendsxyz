@@ -286,7 +286,7 @@ const app = {
             
             nav.in_page_routelinks_bar.forEach(bar => {
               
-              bar.classList.remove("scroll-end--slideup-bar")
+              //bar.classList.remove("scroll-end--slideup-bar")
               
             })
             
