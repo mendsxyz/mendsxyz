@@ -56,34 +56,28 @@ const app = {
             
         }
         
-        /*
-        const largerScreens = window.matchMedia("(min-width:768px)")
+        
+        const largerScreens = window.matchMedia("(min-height:560px)")
         
         function checkScreenSize(e){
           
           if(e.matches){
             
-            console.log("larger screen!")
-            
-          } else{
-            
-            if (nav.menu.classList.contains("navmenu-hidden")) {
-              
-              nav.menu.classList.remove("navmenu-hidden")
-              
-            } else {
-              
-              nav.menu.classList.add("navmenu-hidden")
-              
+            nav.in_page_routelinks.forEach(bar => {
+              bar.classList.add("scroll-end--slideup-bar")
             }
             
+          } else {
+              
+              nav.in_page_routelinks[index].classList.remove("scroll-end--slideup-bar")
+              
+           }
+            
           }
-          
-        }
         
         largerScreens.addListener(checkScreenSize)
         
-        checkScreenSize(largerScreens) */
+        checkScreenSize(largerScreens) 
         
       },
       
