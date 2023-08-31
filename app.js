@@ -257,9 +257,9 @@ const app = {
           
           //let documentHeight = document.documentElement.scrollHeight;
           
-         let windowHeight = window.innerHeight;
+         //let windowHeight = window.innerHeight;
           
-          if(scrollPosition >= 30 || windowHeight > 560){
+          if(scrollPosition >= 30){
             
             nav.in_page_routelinks_bar.forEach(bar => {
               
@@ -282,6 +282,17 @@ const app = {
         }); ...
         
       }
+
+     } else {
+
+      window.removeListener("scroll")
+
+       nav.in_page_routelinks_bar.forEach(bar => {
+         bar.classList.add("scroll-end--slideup-bar")
+       }
+
+      
+    }
       
     }
     
