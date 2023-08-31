@@ -76,6 +76,8 @@
 
 /* Spacing */
 
+.m-auto{margin:auto;}
+
 .mx-3{}
 
 .mt-2{margin-top:var(--s2);}
