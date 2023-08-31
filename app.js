@@ -237,9 +237,9 @@ const app = {
         
         //let prevScrollPosition = window.scrollY;
 
-        let windowHeight = window.innerHeight;
+        let screenHeight = window.innerHeight;
 
-        if(windowHeight > 560){
+        if(screenHeight > 560){
           nav.in_page_routelinks_bar.forEach(bar => {
             bar.classList.add("scroll-end--slideup-bar)
           }
@@ -248,10 +248,6 @@ const app = {
         window.addEventListener('scroll', function() {
           
           let scrollPosition = window.scrollY;
-
-          let screenVerticalHeight = window.innerHeight;
-
-          let maxVerticalHeight = document.documentElement.height;
           
           //let documentHeight = document.documentElement.scrollHeight;
           
