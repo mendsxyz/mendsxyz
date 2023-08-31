@@ -235,7 +235,7 @@ const app = {
       
       SLIDEUP_IN_PAGE_ROUTELINKS_BAR_ON_SCROLL_END(){
         
-        //let prevScrollPosition = window.scrollY;
+        /*let prevScrollPosition = window.scrollY;
 
         let screenHeight = window.innerHeight;
 
@@ -244,7 +244,8 @@ const app = {
             bar.classList.add("scroll-end--slideup-bar)
           }
         }
-          
+        */
+        
         window.addEventListener('scroll', function() {
           
           let scrollPosition = window.scrollY;
