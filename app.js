@@ -228,7 +228,7 @@ const app = {
       },
 
       SHOW_IN_PAGE_ROUTELINKS_BAR_ON_LONGER_MOBILE_SCREENS(){
-
+/*
        window.addEventListener("load", function() {
 
          let windowHeight = window.innerHeight;
@@ -241,7 +241,7 @@ const app = {
            
          }
          
-       }
+       }*/
         
       },
       
@@ -286,7 +286,7 @@ const app = {
             
             nav.in_page_routelinks_bar.forEach(bar => {
               
-              //bar.classList.remove("scroll-end--slideup-bar")
+              bar.classList.remove("scroll-end--slideup-bar")
               
             })
             
