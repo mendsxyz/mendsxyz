@@ -413,7 +413,7 @@ body.dark-theme .form-field > input[type="submit"]{
   opacity:1;
 }
 .in-page-routelinks--bar button.in-page-routelink.route-to-meet{
-  padding:var(--s2);
+  padding:0.5rem var(--s2);
 }
 .in-page-routelinks--bar button.in-page-routelink > span{
   color:var(--white);
