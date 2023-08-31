@@ -285,7 +285,7 @@ const app = {
 
      } else {
 
-      window.removeListener("scroll")
+      window.removeEventListener("scroll")
 
        nav.in_page_routelinks_bar.forEach(bar => {
          bar.classList.add("scroll-end--slideup-bar")
