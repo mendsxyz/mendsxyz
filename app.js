@@ -247,17 +247,9 @@ const app = {
       
       SLIDEUP_IN_PAGE_ROUTELINKS_BAR_ON_SCROLL_END(){
         
-        /*let prevScrollPosition = window.scrollY;
-
         let screenHeight = window.innerHeight;
 
-        if(screenHeight > 560){
-          nav.in_page_routelinks_bar.forEach(bar => {
-            bar.classList.add("scroll-end--slideup-bar)
-          }
-        }
-        */
-        
+        if(screenHeight <= 560){
         
         window.addEventListener('scroll', function() {
           
@@ -275,14 +267,6 @@ const app = {
               
             })
             
-         /* } else if(windowHeight > 560){
-
-            nav.in_page_routelinks_bar.forEach(bar => {
-              
-              bar.classList.add("scroll-end--slideup-bar")
-              
-            }*/
-            
           } else {
             
             nav.in_page_routelinks_bar.forEach(bar => {
@@ -295,7 +279,7 @@ const app = {
           
           //prevScrollPosition = scrollPosition;
           
-        });
+        }); ...
         
       }
       
