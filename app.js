@@ -240,6 +240,10 @@ const app = {
         window.addEventListener('scroll', function() {
           
           let scrollPosition = window.scrollY;
+
+          let screenVerticalHeight = window.innerHeight;
+
+          let maxVerticalHeight = document.documentElement.height;
           
           //let documentHeight = document.documentElement.scrollHeight;
           
