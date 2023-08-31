@@ -68,11 +68,15 @@
 
 /* Sizing */
 
+.w-70{width:70%;}
+
 .w-100{width:100%;}
 
 .minw-7{min-width:7rem;}
 
 /* Spacing */
+
+.mx-3{}
 
 .mt-2{margin-top:var(--s2);}
 
