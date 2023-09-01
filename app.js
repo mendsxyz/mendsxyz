@@ -233,9 +233,9 @@ const app = {
         
         if(screenHeight <= 560){
           
-          alert("less than 560")
+          //alert("less than 560")
 
-          window.removeEventListener("load", showRoutelinksBarAlt);
+          //window.removeEventListener("load", showRoutelinksBarAlt);
         
           window.addEventListener('scroll', scrollFunction() {
             
@@ -269,9 +269,9 @@ const app = {
           
         } else {
           
-          alert("longer than 560")
+          //alert("longer than 560")
           
-          window.removeEventListener("scroll",  scrollFunction);
+          //window.removeEventListener("scroll",  scrollFunction);
 
           window.addEventListener('load', showRoutelinksBarAlt(){
             
