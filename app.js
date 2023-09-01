@@ -237,7 +237,7 @@ const app = {
 
           //window.removeEventListener("load", showRoutelinksBarAlt);
         
-          window.addEventListener('scroll', scrollFunction() {
+          window.addEventListener('scroll', function scrollFunction() {
             
             let scrollPosition = window.scrollY;
             
@@ -273,7 +273,7 @@ const app = {
           
           //window.removeEventListener("scroll",  scrollFunction);
 
-          window.addEventListener('load', showRoutelinksBarAlt(){
+          window.addEventListener('load', function showRoutelinksBarAlt(){
             
             nav.in_page_routelinks_bar.forEach(bar => {
             
