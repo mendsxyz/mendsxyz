@@ -234,6 +234,8 @@ const app = {
         if(screenHeight <= 560){
           
           alert("less than 560")
+
+          window.removeEventListener("load", showRoutelinksBarAlt);
         
           window.addEventListener('scroll', function scrollFunction() {
             
@@ -269,12 +271,16 @@ const app = {
           
           alert("longer than 560")
           
-          window.removeEventListener("scroll", scrollFunction)
-          
-          nav.in_page_routelinks_bar.forEach(bar => {
+          window.removeEventListener("scroll",  scrollFunction);
+
+          window.addEventListener('load', function showRoutelinksBarAlt(){
             
-            bar.classList.add("scroll-end--slideup-bar")
+            nav.in_page_routelinks_bar.forEach(bar => {
             
+              bar.classList.add("scroll-end--slideup-bar")
+            
+            })
+
           })
           
         }
