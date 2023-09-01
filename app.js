@@ -235,7 +235,7 @@ const app = {
           
           alert("less than 560")
 
-          window.removeListener("load", showRoutelinksBarAlt);
+          window.removeEventListener("load", showRoutelinksBarAlt);
         
           window.addEventListener('scroll', scrollFunction() {
             
@@ -271,7 +271,7 @@ const app = {
           
           alert("longer than 560")
           
-          window.removeListener("scroll",  scrollFunction);
+          window.removeEventListener("scroll",  scrollFunction);
 
           window.addEventListener('load', showRoutelinksBarAlt(){
             
