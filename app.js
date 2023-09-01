@@ -235,9 +235,9 @@ const app = {
           
           alert("less than 560")
 
-          window.removeEventListener("load", showRoutelinksBarAlt);
+          window.removeListener("load", showRoutelinksBarAlt);
         
-          window.addEventListener('scroll', function scrollFunction() {
+          window.addEventListener('scroll', scrollFunction() {
             
             let scrollPosition = window.scrollY;
             
@@ -271,9 +271,9 @@ const app = {
           
           alert("longer than 560")
           
-          window.removeEventListener("scroll",  scrollFunction);
+          window.removeListener("scroll",  scrollFunction);
 
-          window.addEventListener('load', function showRoutelinksBarAlt(){
+          window.addEventListener('load', showRoutelinksBarAlt(){
             
             nav.in_page_routelinks_bar.forEach(bar => {
             
