@@ -235,7 +235,7 @@ const app = {
           
           console.log("less than 560")
         
-          window.addEventListener('scroll', function() {
+          window.addEventListener('scroll', function scrollFunction() {
             
             let scrollPosition = window.scrollY;
             
@@ -269,7 +269,7 @@ const app = {
           
           console.log("longer than 560")
           
-          window.removeEventListener("scroll", scroll)
+          window.removeEventListener("scroll", scrollFunction)
           
           nav.in_page_routelinks_bar.forEach(bar => {
             
