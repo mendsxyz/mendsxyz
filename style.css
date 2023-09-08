@@ -361,7 +361,6 @@ body.dark-theme .form-field > input[type="submit"]{
   border-right:0.5rem solid var(--white);
 }
 .app{
-  white-space:nowrap;
   width:100%;
   display:grid;
   align-content:center;
