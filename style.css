@@ -361,6 +361,7 @@ body.dark-theme .form-field > input[type="submit"]{
   border-right:0.5rem solid var(--white);
 }
 .app{
+  white-space:nowrap;
   width:100%;
   display:grid;
   align-content:center;
@@ -455,13 +456,11 @@ body.dark-theme .form-field > input[type="submit"]{
 }
 .content{
   padding:var(--s1) 0;
-  white-space:nowrap;
 }
 .heading{
   max-width:100%;
   padding:var(--s4) 0 0 0;
   margin-left:0;
-  white-space:nowrap;
   display:flex;
   flex-direction:column;
   position:relative;
@@ -617,7 +616,6 @@ body.dark-theme .form-field > input[type="submit"]{
   min-height:40vh;
   max-height:40vh;
   margin:auto;
-  white-space:nowrap;
   display:flex;
   align-items:center;
   justify-content:left;
