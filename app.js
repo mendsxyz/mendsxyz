@@ -343,7 +343,32 @@ const app = {
       
     }
     
-    tab.SWITCH_TAB()
+    tab.SWITCH_TAB();
+
+    const fileDownload = {
+        
+        _HANDLE_FILE_DOWNLOAD(){
+          const downloadBtns = document.querySelectorAll("[data-download]");
+          
+          downloadBtns.forEach(button => {
+              const id = button.dataset.download;
+              const file = document.getElementById(id);
+              const anchorTagEl = document.createElement("a");
+              anchorTagEl.href = file.src;
+              anchorTagEl.download = "";
+              anchorTagEl.style.display = "none";
+              
+              button.addEventListener("click", () => {
+                  document.body.appendChild(anchorTagEl);
+                  anchorTagEl.click();
+                  document.body.removeChild(anchorTagEl);
+              });
+          });
+        }
+        
+    }
+    
+    fileDownload._HANDLE_FILE_DOWNLOAD();
     
   },
   
